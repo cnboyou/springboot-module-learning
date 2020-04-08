@@ -1,4 +1,4 @@
-package com.ehi.thread.threadStatus;
+package com.ehi.thread.simpleThread.threadStatus;
 
 /**
  * ClassName: s

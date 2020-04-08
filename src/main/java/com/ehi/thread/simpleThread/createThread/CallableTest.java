@@ -1,4 +1,4 @@
-package com.ehi.thread.createThread;
+package com.ehi.thread.simpleThread.createThread;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;

@@ -193,7 +193,9 @@ public class FileService implements InitializingBean {
             if (fileLength <= length) {
                 // 在rename之前需要保证文件资源不被占用，否则会失败，所以在此之前将targetFile关闭掉
                 // 计算MD5值
-                String md5 = DigestUtils.md5Hex(new FileInputStream(new File(actualFilePath)));
+                FileInputStream fileInputStream = new FileInputStream(new File(actualFilePath));
+                String md5 = DigestUtils.md5Hex(fileInputStream);
+                fileInputStream.close();
                 StringBuilder stringBuilder = new StringBuilder();
                 stringBuilder.append(storePathFile.getAbsolutePath()).append(File.separator).append(md5).append(fileSuffix);
                 new File(actualFilePath).renameTo(new File(stringBuilder.toString()));

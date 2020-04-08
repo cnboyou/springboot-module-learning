@@ -1,4 +1,4 @@
-package com.ehi.thread.deadLock;
+package com.ehi.thread.simpleThread.deadLock;
 
 /**
  * ClassName: s
