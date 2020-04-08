@@ -1,4 +1,4 @@
-package com.ehi.log.test;
+package com.ehi.log.log4j.test;
 
 import lombok.extern.slf4j.Slf4j;
 

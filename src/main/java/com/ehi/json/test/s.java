@@ -1,12 +1,12 @@
 /*
 package com.ehi.json.deadLock;
 
-import com.ehi.json.dao.FullName;
-import com.ehi.json.dao.Person;
-import com.ehi.json.utils.FastJsonUtils;
-import com.ehi.json.utils.GsonUtils;
-import com.ehi.json.utils.JacksonUtils;
-import com.ehi.json.utils.JsonLibUtils;
+import com.ehi.json.FactoryPattern.FullName;
+import com.ehi.json.FactoryPattern.Person;
+import com.ehi.json.example2.FastJsonUtils;
+import com.ehi.json.example2.GsonUtils;
+import com.ehi.json.example2.JacksonUtils;
+import com.ehi.json.example2.JsonLibUtils;
 import jdk.nashorn.internal.runtime.options.Options;
 import org.junit.runner.Runner;
 

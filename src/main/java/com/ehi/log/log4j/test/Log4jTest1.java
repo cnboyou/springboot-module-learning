@@ -1,4 +1,4 @@
-package com.ehi.log.test;
+package com.ehi.log.log4j.test;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.LoggerContext;
