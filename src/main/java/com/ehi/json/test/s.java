@@ -1,5 +1,5 @@
 /*
-package com.ehi.json.test;
+package com.ehi.json.deadLock;
 
 import com.ehi.json.dao.FullName;
 import com.ehi.json.dao.Person;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
+import java.util.thread.TimeUnit;
 
 */
 /**

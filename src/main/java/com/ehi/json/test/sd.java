@@ -1,5 +1,5 @@
 /*
-package com.ehi.json.test;
+package com.ehi.json.deadLock;
 
 import com.ehi.json.dao.Person;
 import com.ehi.json.utils.FastJsonUtils;
