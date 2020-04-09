@@ -7,6 +7,7 @@ import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.Cursor;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ScanOptions;
+import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.io.IOException;
@@ -26,6 +27,7 @@ import java.util.function.Consumer;
  * @Date: 2020/4/8 18:28
  * @Description: redis工具类
  */
+@Component
 public final class RedisUtil {
 
     private static Logger logger = LoggerFactory.getLogger(RedisUtil.class);
