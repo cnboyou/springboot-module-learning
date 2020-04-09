@@ -96,6 +96,12 @@
         </dependency>
 
 
+        <!--  netty依赖 springboot2.0自动导入版本-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+        </dependency>
+
 
         <!--引入swagger -->
         <dependency>
