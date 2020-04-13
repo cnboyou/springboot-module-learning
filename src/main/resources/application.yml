@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8089
 
 spring:
   datasource:
@@ -31,6 +31,29 @@ spring:
       shutdown-timeout: 100ms
     password: wyh19950212
     port: 6379
+  ##quartz定时器
+  quartz:
+      #相关属性配置
+      properties:
+        org:
+          quartz:
+            scheduler:
+              instanceName: clusteredScheduler
+              instanceId: AUTO
+            jobStore:
+              class: org.quartz.impl.jdbcjobstore.JobStoreTX
+              driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+              tablePrefix: QRTZ_
+              isClustered: true
+              clusterCheckinInterval: 10000
+              useProperties: false
+            threadPool:
+              class: org.quartz.simpl.SimpleThreadPool
+              threadCount: 10
+              threadPriority: 5
+              threadsInheritContextClassLoaderOfInitializingThread: false
+      #数据库方式
+      job-store-type: jdbc
 
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
