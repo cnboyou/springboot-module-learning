@@ -1,0 +1,27 @@
+package com.ehi.designPattren.StructuralPattern.ProxyPattern;
+
+/**
+ * ClassName: s
+ *
+ * @Author: WangYiHai
+ * @Date: 2020/4/8 16:06
+ * @Description: TODO
+ */
+public class ProxyImage implements Image {
+
+    private RealImage realImage;
+
+    private String fileName;
+
+    public ProxyImage(String fileName) {
+        this.fileName = fileName;
+    }
+
+    @Override
+    public void display() {
+        if (realImage == null) {
+            realImage = new RealImage(fileName);
+        }
+        realImage.display();
+    }
+}
